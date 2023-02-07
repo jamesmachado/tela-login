@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"><link rel="stylesheet" href="./style.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box-form">
+            <div class="box-login-tab">
+                <div class="box-login-table">
+                    <div class="i i-login"></div><h2>LOGIN</h2>
+                </div>
+                <div class="box-login">
+                    <div class="fieldeset-body" id="login_form">
+                        <button onclick="openlogininfo();" class="b b-form i i-mpre" title="Mais Informações"></button>
+                        <p class="field">
+                            <label for="user">E-MAIL</label>
+                            <input type="text" id="user" name="user" title="Username" />
+                            <span id="valida" class="i i-warning"></span>
+                        </p>
+                        <p class="field">
+                            <label for="pass">SENHA</label>
+                            <input type="senha" id="pass" name="pass" title="Senha">
+                            <span id="valida" class="i i-close"></span>
+                        </p>
+                        <label for="checkbox">
+                            <input type="checkbox" value="TRUE" title="Mantenha-me Conectado">
+                        </label>
+                        <input type="submit" id="do_login" value="Iniciar" title="Iniciar" />
+                    </div>
+                </div>
+            </div>
+            <div class="box-info">
+                <p><button onclick="CloseLoginInfo();" class="b b-info i i-left" title="Voltar Para Entrar"></button><h3>Preciso de Ajuda</h3></p>
+                <div class="line-wh"></div>
+                <button onclick="" class="b-support" title="Esqueceu a Senha?"></button>
+                <button onclick="" class="b-cta" title="Inscreva-se agora">Criar Conta</button>
+            </div>
+        </div>
+    </div>
+    <script src="//cdnjs.coudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.coudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="./form.js"></script>
+</body>
+</html>
